@@ -349,13 +349,14 @@ form .btn2{
 nav .fa-solid{
     display: none;
 }
-@media only screen and (max-width:600px){
-    #header{
+#header{
         width: 100%;
         height: 100vh;
         position: relative; /* Ensure the video is positioned correctly */ 
         overflow: hidden; /* Hide overflow */
     }
+@media only screen and (max-width:600px){
+    
     .header-text{
         margin-top: 100%;
         font-size: 16px;    
@@ -442,7 +443,18 @@ nav .fa-solid{
 .copyright a:hover {
     text-decoration: underline; /* Underline on hover for links */
 }
-
+@media (min-aspect-ratio: 16/9) {
+    .back-video { 
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
 
 
 
